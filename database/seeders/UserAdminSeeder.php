@@ -23,5 +23,13 @@ class UserAdminSeeder extends Seeder
         $tipo_documento = TipoDocumento::select('id')->where('tipo','00')->first();
 
         $role = Role::select('id')->where('directriz','super-admin')->first();
+
+        $persona = Persona::firstOrCreate([
+
+        ]);
+
+        $usuario = User::firstOrCreate([
+
+        ]);
     }
 }
